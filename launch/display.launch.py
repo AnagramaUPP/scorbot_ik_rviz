@@ -25,7 +25,7 @@ def generate_launch_description():
         'cat ',  # Lee el contenido del archivo URDF
 
         PathJoinSubstitution([
-            FindPackageShare('scorbot_description'),
+            FindPackageShare('scorbot_ik_rviz'),
             # Localiza la carpeta share del paquete
 
             'urdf',
@@ -36,7 +36,7 @@ def generate_launch_description():
         ])
     ])
     rviz_config_path = PathJoinSubstitution([
-        FindPackageShare('scorbot_description'),
+        FindPackageShare('scorbot_ik_rviz'),
         'rviz',
         'scorbot.rviz'
     ])
